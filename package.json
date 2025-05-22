@@ -1,0 +1,40 @@
+{
+  "name": "@lwe8/util",
+  "version": "0.1.0",
+  "description": "Utilities",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "check": "biome check src --write",
+    "format": "biome format src --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lwe8/util.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/lwe8/util/issues"
+  },
+  "homepage": "https://github.com/lwe8/util#readme",
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^22.15.21",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "dequal": "^2.0.3"
+  },
+  "publishConfig": {
+    "provenance": true,
+    "access": "public"
+  }
+}
